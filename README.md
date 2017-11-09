@@ -1,2 +1,2 @@
-# inkDiaryWebsite
+# CardDiary
 # CardDiary
