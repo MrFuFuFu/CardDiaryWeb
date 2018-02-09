@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Card Diary - FAQs</title>
+
+  <style type="text/css">
+  body {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    line-height: 1.3;
+    font-size: 16px;
+    color: #404040;
+    overflow-x: hidden;
+}
+details {
+    margin-bottom: 20px;
+}
+
+summary {
+    color: #0088CC;
+}
+p {
+    margin-left: 20px;
+}
+
+select {
+    -webkit-appearance: none;
+    margin-top: 15px;
+    color: #337ab7;
+    border-color: #337ab7;
+    padding: 0 .4em;
+    background: #fff;
+    min-height: 28px;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+    <select class="sel-lang" onchange="onLanChange(this.options[this.options.selectedIndex].value)">
+        <option value="0" selected=""> 英文 English </option>
+        <option value="1"> 中文 Chinese </option>
+    </select>
+
+    <div id="english_faqs">
+        <h2>Card Diary FAQ</h2>
+        <h3>Backup and Sync</h3>
+        <details open>
+            <summary>Is Card Diary backup and sync safe?</summary>
+            <p>Yes.</p>
+            <summary>Why Card Diary don't need to sign up?</summary>
+            <p>Card Diary base on your devices and iCloud to store your diary data. All your diaries will store in local and your own iCloud storage.</p>
+            <p>So, we don't need to provide an account system. Your iCloud is your data server.</p>
+            <summary>Is my diary data safe?</summary>
+            <p>Yes. We don't have any server to store your diaries. All your diary base on your devices and iCloud.</p>
+            <summary>What if I don't have iCloud?</summary>
+            <p>You can back up your diaries as "CardDiary JSON(.zip)" manually and regularly through "Import / Export" function.</p>
+        </details>
+
+        <h3>Others</h3>
+        <details >
+            <summary>Other FAQs</summary>
+            <p> </p>
+            <summary>How to change text size, color, style, etc.?</summary>
+            <p>This function will coming soon. (version 4.0-5.0)</p>
+            <summary>Is "Send feedback" work well?</summary>
+            <p>Yes, we can receive all feedbacks through "Send feedback". However, we cannot reply you as we don't have a sever to run.</p>
+            <p>So we highly recommend you to <a style="color: #0088CC" href="https://itunes.apple.com/app/id1295506659?action=write-review">write a review in App Store</a>. We will reply all.</p>
+            <p>Or, you can send us an email: <a style="color: #0088CC" href="mailto:mrfuyuan@gmail.com?subject=Hello%20again">mrfuyuan@gmail.com</a></p>
+        </details>
+    </div>
+
+
+    <div id="chinese_faqs" style="display: none;">
+        <h2>卡片日记常见问题</h2>
+        <h3>备份和同步</h3>
+        <details open>
+            <summary>卡片日记的备份和同步安全吗？</summary>
+            <p>安全.</p>
+            <summary>为什么卡片日记不需要注册登录？</summary>
+            <p>卡片日记的数据保存在你的设备中以及你个人的 iCloud 存储里。</p>
+            <p>所以，我们不需要提供账号系统。这意味着你的日记数据永远掌控在你自己的手里，并不会因为卡片日记服务器宕机而消失（卡片日记没有自己的服务器）。</p>
+            <summary>我的日记数据安全吗？</summary>
+            <p>安全. 所有的数据存在你的设备和你自己的iCloud中，我们无法访问到任何你的日记数据。</p>
+            <summary>如果我没有iCloud怎么办？</summary>
+            <p>通过使用“导入 / 导出”功能，你可以手动定期的备份你的日记为“卡片日记的JSON(.zip) 格式”. 将zip文件保存在任何你想保存的地方。</p>
+            <p style="font-size: 12px;">附: 如果你没有iCloud，我们建议你通过 iTunes 的方式导出到你的电脑，然后通过iTunes 来恢复卡片日记数据。</p>
+        </details>
+
+        <h3>其他</h3>
+        <details >
+            <summary>其他常见问题</summary>
+            <p> </p>
+            <summary>如何改变字体大小，颜色，样式等。</summary>
+            <p>这个功能将很快推出。 (版本 4.0-5.0)</p>
+            <summary>“发送反馈”功能能用吗？</summary>
+            <p>能。通过“发送反馈” 我们能收到所有反馈。但是我们无法回复任何反馈。</p>
+            <p>所以我们强烈建议你通过<a style="color: #0088CC" href="https://itunes.apple.com/app/id1295506659?action=write-review">App Store 写评论</a>。我们会回复所有评论（甚至是广告^ ^）。</p>
+            <p>或者你可以给我们发送邮件: <a style="color: #0088CC" href="mailto:mrfuyuan@gmail.com?subject=Hello%20again">mrfuyuan@gmail.com</a></p>
+        </details>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+    // handle select change
+    function onLanChange(index){
+        var chinese_faqs = document.getElementById("chinese_faqs");
+        var english_faqs = document.getElementById("english_faqs")
+        
+        english_faqs.style.display = index == 0 ? 'block' : 'none';
+        chinese_faqs.style.display = index == 0 ? 'none' : 'block';
+    }
+</script>
+</body>
+</html>
