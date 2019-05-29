@@ -2,7 +2,7 @@
 
 This topic contains some useful user guides that may help you more enjoyable while using Card Diary.
 
-### Change month card photo? 
+### How to change month card photo? 
 
 In Card Diary, you can change month card colour or set a photo by only two clicks.
 
