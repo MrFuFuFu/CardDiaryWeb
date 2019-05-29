@@ -1,8 +1,8 @@
-# How to …?
+## How to …? 
 
 This topic contains some useful user guides that may help you more enjoyable while using Card Diary.
 
-## Change month card background?
+### Change month card photo? 
 
 In Card Diary, you can change month card colour or set a photo by only two clicks.
 
@@ -10,13 +10,13 @@ Click the white “**∙∙∙**” button on the right-bottom of month card and
 
 ![ChangeMonthCard](HelpImages/Screenshots/ChangeMonthCard.png)
 
-## How to check how many days you have/haven’t  written diaries?
+### How to check how many days you have written diaries?
 
 Want to take a look how many days you didn’t write your journal? Easy to do that. Click “CALENDAR” button under the month card and then all month cards will flip to the calendar side. Days with darker colour means you already written your journals, others means haven’t.
 
 ![Calendar](HelpImages/Screenshots/Calendar.png)
 
-## How to change Mine page’s profile and list order?
+### How to change your profile in Mine page?
 
 You can setup your own profile, your own Card Diary’s name or even mood in “Mine” page. It helps you to reflect yourself or remind yourself how your feeling.
 
