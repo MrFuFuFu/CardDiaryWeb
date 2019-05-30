@@ -8,27 +8,27 @@ In some cases, you might expreience some errors like: `iCloud access failed` or 
 
 There are few cases when this happened,
 
-##### You didn’t sign in to your iCloud in your device
+##### iCloud not sign-in on your device
 
-Simply open your Setting app, click the first item and sign in your iCloud account.
+Simply open Setting app, click the first item and sign in your iCloud account.
 
-##### You accidentally disabled Card Diary permission to iCloud
+##### Card Diary has been disabled to access to iCloud
 
-For solving this issue. Open your Setting app — Your Name — iCloud — Scroll down to find “**iCloud Drive**” and “**Card Diary**”. Make sure both of them are enabled.
+For solving this issue. Open Setting app — Your Name — iCloud — Scroll down to find “**iCloud Drive**” and “**Card Diary**”. Make sure both of them are enabled.
 
 ![iCloudAccessFailed](HelpImages/Screenshots/iCloudAccessFailed.png)
 
 #### iCloud quota exceeded
 
-You might expreienced `iCloud quota exceeded` error when your iCloud Storage is full. In this case, you **iCloud Auto Sync** will **be paused** and stop sync if we detect any of this error happened.
+This error happened when iCloud Storage is full. **iCloud Auto Sync** will be paused and stop sync if we detect any of this error happened.
 
 ![iCloudQuotaExceeded0](HelpImages/Screenshots/iCloudQuotaExceeded0.png)
 
- For extending your iCloud Storage, open your **iCloud Storage** page (Setting app — Your Name — iCloud — iCloud Storage), click “**Change Storage Plan**” or delete some data that you don’t want to use any more.
+ For extending iCloud Storage, open **iCloud Storage** page (Setting app — Your Name — iCloud — iCloud Storage), click “**Change Storage Plan**” or delete some data that you don’t want to use any more.
 
 ![iCloudQuotaExceeded](HelpImages/Screenshots/iCloudQuotaExceeded.png)
 
-After you increased your iCloud storage, open Card Diary and click **iCloud auto sync** and click **Sync Now** popup button. You will notice an “*Oops!*” alert popup. Click “**Continue**” to enable **iCloud auto sync** again. If you don’t do so, for the data safety reason, it wouldn’t start automatically. 
+After iCloud storage increased, open Card Diary and click **iCloud auto sync** — **Sync Now** popup button. You will notice an “*Oops!*” alert popup. Click “**Continue**” to enable **iCloud auto sync** again. If this step no been done, for the data safety reason, Card Diary wouldn’t restart to do iCloud auto sync automatically. 
 
 ![iCloudQuotaExceeded1](HelpImages/Screenshots/iCloudQuotaExceeded1.png)
 
