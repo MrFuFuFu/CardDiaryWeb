@@ -8,11 +8,11 @@ In some cases, you might expreience some errors like: `iCloud access failed` or 
 
 There are few cases when this happened,
 
-##### iCloud not sign-in on your device
+##### iCloud not sign-in to your device
 
 Simply open Setting app, click the first item and sign in your iCloud account.
 
-##### Card Diary has been disabled to access to iCloud
+##### Card Diary access to iCloud has been disabled.
 
 For solving this issue. Open Setting app — Your Name — iCloud — Scroll down to find “**iCloud Drive**” and “**Card Diary**”. Make sure both of them are enabled.
 
