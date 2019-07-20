@@ -39,7 +39,7 @@ textarea:focus, input:focus{ outline: none; }
 #app_download img {height:auto;}
 #app_download .appstore {position: absolute;}
 
-#app_download .googleplay { position: absolute; opacity: 0.2}
+#app_download .googleplay { position: absolute;}
 
 #app_img {
     position: absolute;
