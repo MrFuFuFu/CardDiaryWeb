@@ -66,7 +66,7 @@ textarea:focus, input:focus{ outline: none; }
 }
 
 #important_notice {
-  margin-top: 150px;
+  margin-top: 50px;
   position: absolute;
   font-size: 18px;
 }
