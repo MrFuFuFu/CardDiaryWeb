@@ -65,6 +65,12 @@ textarea:focus, input:focus{ outline: none; }
   font-size: 14px;
 }
 
+#important_notice {
+  margin-top: 150px;
+  position: absolute;
+  font-size: 18px;
+}
+
 
 @media screen and (max-width: 320px) and (min-width: 0px) {
   body {height:auto;}
