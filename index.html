@@ -1,80 +1,822 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Card Diary - Pretty journal</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta property="og:title" content="Card Diary - Pretty journal"/>
-    <meta property="og:description" content="Write your day on a card - Card Diary is a perfect place for you to think, feel, discover, expand, remember, and dream. The age we're living in is overloaded with information. Sometimes it gets so noisy it's hard to hear your own voice. Journaling is all about taking a break, turning your attention inwards and listen to what is going on in your mind"/>
-    <meta property="og:image" content="./og_img.png"/>
-
-    <!-- Description -->
-    <meta name="author" content="Card Diary - Pretty journal"/>
-    <meta name="description" content="Write your day on a card"/>
-    <meta name="keywords"  content="days,moments,countdown,iOS,iPhone,app,mobile,full page,landing page,design,memories,events"/>
-    <meta name="Resource-type" content="Document"/>
-    
-    <!-- Open Graph data -->        
-    <meta property="og:site_name" content="Card Diary - Pretty journal"/>
-    <meta property="og:title" content="Card Diary - Pretty journal" />
-    <meta property="og:description" content="Write your day on a card"/>
-    <meta property="og:image" content="./og_img.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://carddiary.me/" />
-
-    <!-- Twitter -->    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Card Diary - Pretty journal">
-    <meta name="twitter:description" content="Write your day on a card">
-    <meta name="twitter:url" content="https://carddiary.me/">
-    <meta name="twitter:image" content="./og_img.png">
-
-    <!-- Icons -->          
-    <link rel="shortcut icon" href="./img/icon/favicon.ico" />
-    <link href="./og_img.png" type="image/png" rel="image_src">
-    <link href="https://carddiary.me/" rel="canonical">
-    
-    <link rel="apple-touch-icon" sizes="57x57" href="./img/icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./img/icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./img/icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./img/icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./img/icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./img/icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./img/icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./img/icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./img/icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./img/icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
-    <link rel="manifest" href="./img/icon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./img/icon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/aos.js"></script>
+    <title>Card Diary</title>
 </head>
 <body>
-    <div id="wrap">
-        <div class="top_line"></div>
-        <div class="inner_wrap">
-            
-            <div id="top"><img src="img/logo.svg"></div>
-            <div id="middle">
-                <div id="main_txt"><img src="img/main_txt.svg"></div>    
-                <div id="app_download">
-                    <div class="appstore"><a href="https://itunes.apple.com/app/card-diary-pretty-journal/id1295506659?mt=8" target="_blank"><img src="img/download_appstore.png"></a></div>
-                    
-                    <div class="googleplay"><a href="https://play.google.com/store/apps/details?id=com.card.carddiary" target="_blank"><img src="img/download_googleplay.png"></a></div>    
+    <nav id="nav-mobile" data-nav-mobile>
+        <div>
+            <div id="nav-wrapper">
+                <div id="nav-content">
+                    <div id="logo-mobile">
+                        <a href="#landing">
+                            <img src="img/logo.png" alt="Card Diary Logo">
+                        </a>
+                    </div>
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-                <div id="contact_detail"><a href="mailto:Hello@CardDiary.me?subject=[Card%20Diary]%20Feedback-Web">Hello@CardDiary.me</a></div>
-                <div id="help_center"><a href="https://carddiary.me/help">Help center</a></div>
+                <div id="links">
+                    <ul id="links-wrapper">
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="https://carddiary.me/help">Help</a>
+                        </li>
+                        <li id="lng">
+                                <p id="lng-switch" class="en"><span>中</span>/<span>EN</span></p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="app_img"><img src="img/app_img.png"></div>
         </div>
-    </div>
-
+    </nav>
+    <nav id="nav" data-nav>
+        <div class="container-wi">
+            <div id="nav-content">
+                <div id="logo">
+                    <a href="#landing">
+                            <img src="img/logo.png" alt="Card Diary Logo">
+                        </a>
+                </div>
+                <ul id="links">
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="https://carddiary.me/help">Help</a>
+                    </li>
+                    <li id="lng">
+                        <p id="lng-switch" class="en"><span>中</span>/<span>EN</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="landing">
+        <div class="container">
+            <div id="header-content">
+                <div class="card">
+                    <h1 id="main-header" data-aos="fade-right">Write your day on a card</h1>
+                    <p id="header-lead" data-aos="fade-down">Write your memory on your card. Love, happy, joy, sometimes... sad or painful. You can fill in all your feelings.</p>
+                    <div class="apple-google fade">
+                        <!-- Link to app store here -->
+                        <a href="https://apps.apple.com/app/id1295506659" target="_blank">
+                            <img src="img/app-store.png" alt="Card Diary on the app store">
+                        </a>
+                        <!-- Link to google play here -->
+                        <a href="https://play.google.com/store/apps/details?id=com.card.carddiary" target="_blank">
+                            <img src="img/google-play.png" alt="Card Diary on google play">
+                        </a>
+                    </div>
+                    <div id="rating" class="fade">
+                        <img src="img/stars.png" alt="5 star rating">
+                        <p id="average">4.9</p>
+                        <p>47,000+ App store reviews</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <img src="img/header-image.png" alt="Day on a card">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rewards">
+        <div class="container-nr">
+            <div id="rewards-content" class="fade">
+                <div>
+                    <img src="img/1.png" alt="App of the day">
+                </div>
+                <div>
+                    <img src="img/2.png" alt="Product Hunt Featured">
+                </div>
+                <div>
+                    <img src="img/3.png" alt="Behance Featured">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="card" data-aos="fade-right">
+                    <img src="img/4.png" alt="Listen to your heart">
+                </div>
+                <div class="card">
+                    <h2>Listen to your heart</h2>
+                    <p class="intro-lead">The age we're living in is overloaded with information. Sometimes it gets so noisy it's hard to hear your own voice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="card">
+                    <h2>Capture your life story</h2>
+                    <p class="intro-lead">Journaling is all about taking a break, turning your attention inwards and listening to what is going on in your mind.</p>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <img src="img/5.png" alt="Capture your life story">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="intro" id="last">
+        <div class="container">
+            <div class="intro-content">
+                <div class="card" data-aos="fade-right">
+                    <img src="img/6.png" alt="Make your day meaningful">
+                </div>
+                <div class="card">
+                    <h2>Make your day meaningful</h2>
+                    <p class="intro-lead">
+                        <span>Card Diary</span>
+                        is a perfect place for you to think, feel, discover, remember, and dream. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <div id="features-content">
+                <h2>Essential Features</h2>
+                <p id="features-lead">With various intuitive functions, Card Diary customizes your writing process, organizes your entries, secures your privacy, and allows you to access your data anytime, anywhere.</p>
+                <div id="features-cards">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <h3>Enrich Your Memory</h3>
+                            <ul>
+                                <li>Photos and Video in Diary</li>
+                                <li>Rich Text Format / Multiple fonts</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Feel Warm and Private</h3>
+                            <ul>
+                                <li>Feel Warm and Private</li>
+                                <li>Face ID / Password Lock</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-wrapper"> 
+                        <div class="card">
+                            <h3>Record Your Moods</h3>
+                            <ul>
+                                <li>Statistics / Photo Gallery</li>
+                                <li>Emotions / Tags / Locations / Favorites</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Never Lose a Moment</h3>
+                            <ul>
+                                <li>Cloud Auto Sync (iCloud / Google Drive)</li>
+                                <li>Export as PDF/TXT/ZIP file</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <div class="container">
+            <div id="pricing-content">
+                <h2>Pricing</h2>
+                <p id="pricing-lead">Most features in Card Diary are free to use. Upgrade to the Pro plan to enjoy more advanced features and unlock extra happiness!</p>
+                <div id="time-span">
+                    <button class="time active" id="1-month">1 Month</button>
+                    <button class="time" id="1-year">1 Year</button>
+                    <button class="time" id="lifetime">Lifetime</button>
+                </div>
+                <div id="plans">
+                    <div class="plan" data-aos="fade-right" id="free">
+                        <table>
+                            <tr>
+                                <th>
+                                    <h3>Free plan</h3>
+                                    <p>Enjoy most features!</p>
+                                </th>
+                                <!-- <th>
+                                    <img src="img/7.png" alt="Pro plan">
+                                </th> -->
+                            </tr>
+                            <tr id=price-time>
+                                <td id="price">$0</td>
+                                <!-- <td id="time">Monthly</td> -->
+                            </tr>
+                            <tr class="view-more">
+                                <td><p class="view-more-link">View All Features</p></td>
+                                <td>
+                                    <div class="angle-wrapper">
+                                        <img src="img/angle-down.png" alt="arrow down">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-1.png" alt="Photos" class="icon">
+                                        <p>Photos</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include disabled">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-2.png" alt="Video" class="icon">
+                                        <p>Video</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-3.png" alt="Weather" class="icon">
+                                        <p>Weather</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-4.png" alt="Locations" class="icon">
+                                        <p>Locations</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-5.png" alt="Tags" class="icon">
+                                        <p>Tags</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-6.png" alt="Reminder" class="icon">
+                                        <p>Reminder</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-7.png" alt="Statistics" class="icon">
+                                        <p>Statistics</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-8.png" alt="Photos Gallery" class="icon">
+                                        <p>Photos Gallery</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-9.png" alt="Face ID" class="icon">
+                                        <p>Face ID / Fingerprint</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-10.png" alt="Claud Auto Sync" class="icon">
+                                        <p>Claud Auto Sync</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include disabled">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-11.png" alt="Righ Text Format" class="icon">
+                                        <p>Righ Text Format</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include disabled">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-12.png" alt="Multiple Fonts" class="icon">
+                                        <p>Multiple Fonts</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include disabled">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-13.png" alt="Emotions" class="icon">
+                                        <p>Emotions</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include disabled">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-14.png" alt="Favorites" class="icon">
+                                        <p>Favorites</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include disabled">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-15.png" alt="Dark Mode" class="icon">
+                                        <p>Dark Mode</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include disabled">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-16.png" alt="Password Lock" class="icon">
+                                        <p>Password Lock</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include disabled">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-17.png" alt="More Photos & Videos" class="icon">
+                                        <p>More Photos & Videos</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include disabled">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-18.png" alt="Export as PDF/TXT/ZIP" class="icon">
+                                        <p>Export as PDF/TXT/ZIP</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="plan" data-aos="fade-left" id="pro">
+                        <table>
+                            <tr>
+                                <th>
+                                    <h3>Pro plan</h3>
+                                    <p>Unlock all features!</p>
+                                </th>
+                                <th>
+                                    <img src="img/7.png" alt="Pro plan">
+                                </th>
+                            </tr>
+                            <tr id=price-time>
+                                <td id="price">$0.99</td>
+                                <td id="time">Monthly</td>
+                            </tr>
+                            <tr class="view-more">
+                                <td><p class="view-more-link">View All Features</p></td>
+                                <td>
+                                    <div class="angle-wrapper">
+                                        <img src="img/angle-down.png" alt="arrow down">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-1.png" alt="Photos" class="icon">
+                                        <p>Photos</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-2.png" alt="Video" class="icon">
+                                        <p>Video</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-3.png" alt="Weather" class="icon">
+                                        <p>Weather</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-4.png" alt="Locations" class="icon">
+                                        <p>Locations</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-5.png" alt="Tags" class="icon">
+                                        <p>Tags</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-6.png" alt="Reminder" class="icon">
+                                        <p>Reminder</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-7.png" alt="Statistics" class="icon">
+                                        <p>Statistics</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-8.png" alt="Photos Gallery" class="icon">
+                                        <p>Photos Gallery</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-9.png" alt="Face ID" class="icon">
+                                        <p>Face ID / Fingerprint</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-10.png" alt="Claud Auto Sync" class="icon">
+                                        <p>Claud Auto Sync</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-11.png" alt="Righ Text Format" class="icon">
+                                        <p>Righ Text Format</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-12.png" alt="Multiple Fonts" class="icon">
+                                        <p>Multiple Fonts</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-13.png" alt="Emotions" class="icon">
+                                        <p>Emotions</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-14.png" alt="Favorites" class="icon">
+                                        <p>Favorites</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-15.png" alt="Dark Mode" class="icon">
+                                        <p>Dark Mode</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-16.png" alt="Password Lock" class="icon">
+                                        <p>Password Lock</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-17.png" alt="More Photos & Videos" class="icon">
+                                        <p>More Photos & Videos</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="include">
+                                <td>
+                                    <div class="icon-text-wrapper">
+                                        <img src="img/i-18.png" alt="Export as PDF/TXT/ZIP" class="icon">
+                                        <p>Export as PDF/TXT/ZIP</p>
+                                    </div>
+                                </td>
+                                <td class="check">
+                                    <div class="check-wrapper">
+                                        <img src="img/check.png" alt="Check" class="icon">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="start">
+        <div class="container">
+            <div id="start-content">
+                <h2>Get Started For Free!</h2>
+                <p id="start-lead">Card Diary is available for Android, iPhone and iPad.</p>
+                <div class="apple-google" class="fade">
+                        <!-- Link to app store here -->
+                        <a href="https://apps.apple.com/us/app/card-diary-memories-journal/id1295506659" target="_blank">
+                            <img src="img/app-store.png" alt="Card Diary on the app store">
+                        </a>
+                        <!-- Link to google play here -->
+                        <a href="https://play.google.com/store/apps/details?id=com.card.carddiary" target="_blank">
+                            <img src="img/google-play.png" alt="Card Diary on google play">
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="container">
+            <div class="reviews-content">
+                <div class="card">
+                    <img src="img/stars-2.png" alt="5 Stars">
+                    <p class="review-text">“I love this app so much. I downloaded almost every journal app, this one was by far the best one for me. It’s super simple and aesthetically pleasing.”</p>
+                    <div class="person">
+                        <div class="logo">K</div>
+                        <div class="name"><p>Kilo_reley</p></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/stars-2.png" alt="5 Stars">
+                    <p class="review-text">“The interface is simple and beautiful. It’s a low commitment way to keep memories that you will cherish later on. They give many ways to backup entries so they don’t get lost.”</p>
+                    <div class="person">
+                        <div class="logo">M</div>
+                        <div class="name"><p>MJRecht</p></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/stars-2.png" alt="5 Stars">
+                    <p class="review-text">“This is by far one of the best journalling apps in the market and I am fully satisfied with all the simplicity & elegance that it features, most especially its minimalist design.”</p>
+                    <div class="person">
+                        <div class="logo">B</div>
+                        <div class="name"><p>Blanche25</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews-mobile">
+         <div class="container">
+            <div class="reviews-content">
+                <div class="card">
+                    <img src="img/stars-2.png" alt="5 Stars">
+                    <p class="review-text">“I love this app so much. I downloaded almost every journal app, this one was by far the best one for me. It’s super simple and aesthetically pleasing.”</p>
+                    <div class="person">
+                        <div class="logo">K</div>
+                        <div class="name"><p>Kilo_reley</p></div>
+                    </div>
+                    <div id="reviews-select">
+                        <div class="active" id="0"></div>
+                        <div id="1"></div>
+                        <div id="2"></div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div id="footer-content">
+                <div style="width: 200px;">
+                    <img src="img/logo-2.png" alt="Logo"/>
+                    <p>Write your day on a card.</p>
+                </div>
+                <div id="links" style="color: #ddd;">
+                    <a href="https://carddiary.me/TermsOfUses.html">Terms</a>
+                    |&nbsp;&nbsp;&nbsp; <a href="https://carddiary.me/Privacy%20Policy.html">Privacy</a>
+                    <p>|&nbsp;&nbsp;&nbsp; © Rhythmical Studio</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init({
+            duration: 500
+        });
+    </script>
+    <script src="js/versions.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
-    
