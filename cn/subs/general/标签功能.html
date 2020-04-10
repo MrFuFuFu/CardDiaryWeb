@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://carddiary.me/cn/faq/Extensions/Browser%20extensions/ -->
+<html lang="zh-Hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KR24RFL');</script>
+    <!-- End Google Tag Manager -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 " type="image/x-icon" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/favicon.ico">
+    <link rel="icon" sizes="32x32" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-32.png">
+    <link rel="icon" sizes="192x192" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-192.png">
+    <meta name="google-site-verification" content="aEuVsUFm21dc1iL-pty2fXhRADUENpuQPXI8Kda_M20" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-57.png">
+
+    <link rel="stylesheet" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/screen.css">
+
+    <script src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/jquery-3.1.1.min.js"></script>
+    <script>var base_url = '../..';</script>
+
+    
+    <script src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/main.js"></script>
+    
+
+    
+    
+
+    <script>
+
+        /*
+        !!!!!!!!!ATTENTION!!!!!!!!
+        This code overide some MKDocs js search functions because those functions are not meant to work
+        with chinese script at the moment.
+        If, at some point, MKDocs will comes with support for zh-hans, remove this and the "load search data" code portions.
+        */
+        var search_data = [];
+
+        function doSearch () {
+
+            var query = document.getElementById('mkdocs-search-query').value;
+                query = query.toLowerCase();
+            var results = [];
+
+            for ( i=0; i<search_data.docs.length; i++) {
+
+                var doc = search_data.docs[i];
+
+                if ( doc.title.toLowerCase().indexOf(query) != -1 || doc.text.toLowerCase().indexOf(query) != -1 ) {
+
+                    results.push(doc);
+                }
+            }
+
+            displayResults(results);
+        }
+
+        function displayResults (results) {
+
+            var search_results = document.getElementById("mkdocs-search-results");
+
+            while (search_results.firstChild) {
+
+                search_results.removeChild(search_results.firstChild);
+            }
+
+            if (results.length > 0){
+
+                for (var i=0; i < results.length; i++) {
+
+                    var result = results[i];
+
+                    var summ = result.text.length > 200 ? result.text.substring(0, 200) : result.text;
+
+                    var html = formatResult(result.location, result.title, summ);
+                    search_results.insertAdjacentHTML('beforeend', html);
+                }
+
+            } else {
+
+                search_results.insertAdjacentHTML('beforeend', "<p>未找到结果</p>");
+            }
+        }
+
+        // ---
+
+        $(document).ready(function () {
+
+            var $inputElement = $("#mkdocs-search-query");
+            var inputElement = $("#mkdocs-search-query").get(0);
+
+            var handlePlaceholderRemoval = function () {
+                var currentInputPlaceholderText = inputElement.placeholder;
+                if (!currentInputPlaceholderText || currentInputPlaceholderText == "") {
+                    return;
+                }
+                $inputElement.attr("placeholder", "");
+                $inputElement.on("blur", function () {
+                    $inputElement.attr("placeholder", currentInputPlaceholderText);
+                });
+            };
+
+            // load search data
+
+            var oReq = new XMLHttpRequest();
+            oReq.addEventListener("load", function() {
+
+                search_data  = JSON.parse(this.responseText);
+
+            });
+
+            var index_path = 'https://carddiary.me/cn/help/search/search_index.json';
+            if( 'function' === typeof importScripts ){
+              index_path = 'search_index.json';
+            }
+            oReq.open("GET", index_path);
+            oReq.send();
+
+            // --
+
+            // overwrite /mkdocs/js/search.js
+            var getSearchTerm = function () {
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+                for (var i = 0; i < sURLVariables.length; i++) {
+                    var sParameterName = sURLVariables[i].split('=');
+                    if (sParameterName[0] == 'q') {
+                        return decodeURIComponent(sParameterName[1].replace(/\+/g, '%20'));
+                    }
+                }
+            };
+
+            // handling the click of the suggestion items
+            $(".search-suggestion").click(function (event) {
+                // no default action
+                event.preventDefault();
+                // we will change the search input with the clicked search term
+                var href = $(this).attr("href");
+                $inputElement.focus();
+                var searchString = href.substring(href.indexOf("?q=") + 3, href.length);
+                searchString = decodeURI(searchString);
+                $inputElement.val(searchString);
+                var keyupEvent = new Event('keyup');
+                inputElement.dispatchEvent(keyupEvent);
+                handlePlaceholderRemoval();
+            });
+
+            // if there is a search term we will remove the placeholder in order to
+            // solve an issue on Safari
+            var searchTerm = getSearchTerm();
+            if (typeof searchTerm !== "undefined" && searchTerm != "") {
+                handlePlaceholderRemoval();
+            }
+
+            // Replace the links for the language selector
+            var current_url = window.location.href;
+            var eng_url = zh_url = "";
+
+            if ( current_url.indexOf("/cn/") != -1 ) {
+
+                zh_url = current_url;
+                eng_url = current_url.replace("/cn/", "/");
+
+            } else {
+
+                eng_url = current_url;
+                zh_url = current_url.replace("carddiary.me/", "carddiary.me/cn/");
+            }
+
+            $('#js-en-lang-selector').attr("href", eng_url);
+            $('#js-zh-lang-selector').attr("href", zh_url);
+        });
+
+    </script>
+
+    <title>标签功能 - 卡片日记 - 常见问题和支持</title>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR24RFL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="header alternate-bg faq-header">
+        <div class="wrapper">
+            <nav class="navigation">
+                <a href="https://carddiary.me/cn/">
+                    <img src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/logo.png" width="180px;" class="navigation-logo" alt="卡片日记">
+                </a>
+
+                <ul class="navigation-elements">
+                    <li class="navigation-item"><a name="卡片日记" href="https://carddiary.me">卡片日记</a></li>
+                    <li class="navigation-item"><a name="功能" href="https://carddiary.me/#features">功能</a></li>
+                    <li class="navigation-item"><a name="定价" href="https://carddiary.me/#pricing">定价</a></li>
+                    <li class="navigation-item-selected"><a name="常见问题" href="https://carddiary.me/help/">常见问题</a></li>
+                    <!-- <li class="navigation-item navigation-lang"><a name="English" href="https://carddiary.me/help/" id="js-en-lang-selector">Eng</a> / <a name="中" href="/" id="js-zh-lang-selector">中</a></li> -->
+                </ul>
+            </nav>
+            <h1 class="header-title faq-header-title">您好，有什么需要帮助的吗？</h1>
+
+        <form id="content_search">
+            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+            <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="搜索文档" autocomplete="off">
+        </form>
+<!-- 
+        <p class="search-suggestions">热门搜索:
+            <a href="https://carddiary.me/cn/faq/?q=%E5%90%8C%E6%AD%A5" class="search-suggestion" name="同步">同步</a>,
+            <a href="https://carddiary.me/cn/faq/?q=%E7%86%8A%E6%8E%8C%E8%AE%B0%20Pro" class="search-suggestion" name="熊掌记 Pro">熊掌记 Pro</a>,
+            <a href="https://carddiary.me/cn/faq/?q=%E8%BF%81%E7%A7%BB" class="search-suggestion" name="迁移">迁移</a>
+        </p> -->
+
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div id="mkdocs-search-results">
+        </div>
+
+        <div class="article faq-article">
+            <h1 id="标签功能">标签功能</h1>
+            <h2 id="添加或编辑标签">添加或编辑标签</h2>
+            <br>
+            <ul><li>在编辑视图中，点击 <code class='code-inline'>Title</code> 栏下方的标签标志。
+            </li><li>在弹出的心情，天气，标签，地点页面中选择标签
+            </li><li>点击标签页面右上角的 <code class='code-inline'>+</code> 新建标签。
+            </li><li>点击建好的标签，选择编辑标签或者删除标签。​
+            </li></ul>
+            <p><img src='https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/add_tag.png'></p>
+            <h2 id="标签有什么用处？">标签有什么用处？</h2>
+            <br>
+            <p>在 <code class='code-inline'>我的</code> 页面中，你可以根据标签查看日记。</p>
+            <p>你可以根据标签统计不同类型日记的数量。</p>
+        </div>
+
+
+    </div>
+
+    <div class="get-help-container">
+        <a href="https://carddiary.me/cn/contact/" class="get-help-link">
+            <img src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/contact-us.svg" class="contact-us-icon" alt="联系我们">
+            <span class="get-help-text">联系我们</span>
+        </a>
+    </div>
+
+
+
+</body></html>
