@@ -72,7 +72,7 @@ const pricesTimeChinese = [
 const chinese = {
     links : {
         features: '功能',
-        pricing: '价格',
+        pricing: '定价',
         blog: '帮助',
         download: '下载'
     },
@@ -236,7 +236,7 @@ const chineseVersion = `<nav id="nav-mobile" data-nav-mobile>
                             <a href="#pricing">${chinese.links.pricing}</a>
                         </li>
                         <li>
-                            <a href="https://carddiary.me/help">${chinese.links.blog}</a>
+                            <a href="https://carddiary.me/cn/help">${chinese.links.blog}</a>
                         </li>
                         <li id="lng">
                             <p id="lng-switch" class="cn"><span>中</span>/<span>EN</span></p>
