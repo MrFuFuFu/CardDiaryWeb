@@ -9,7 +9,37 @@
     })(window,document,'script','dataLayer','GTM-KR24RFL');</script>
     <!-- End Google Tag Manager -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta property="og:title" content="帮助 - 卡片日记 - 在你的卡片中写下每一天"/>
+    <meta property="og:description" content="卡片日记为你提供了一个写下思考，感受，发现，探索，记忆和美梦的完美栖息地。我们生活在一个信息过载的时代，太多的碎片和噪音让我们很去倾听自己的心声。写下日记的同时，放慢你的脚步，安静的去聆听内心的呼唤。"/>
+    <meta property="og:image" content="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/og_img.png"/>
+
+    <!-- Description -->
+    <meta name="author" content="卡片日记 - 在你的卡片中写下每一天"/>
+    <meta name="description" content="卡片日记为你提供了一个写下思考，感受，发现，探索，记忆和美梦的完美栖息地。我们生活在一个信息过载的时代，太多的碎片和噪音让我们很去倾听自己的心声。写下日记的同时，放慢你的脚步，安静的去聆听内心的呼唤。"/>
+    <meta name="keywords"  content="card,diary,carddiary,diarycard,card diary,dayone,daygram,griddiary,grid diary,journey,journalling,journal,oneday,memeries,卡片日记,日记,格志,旅行,随手记,生活点滴,日记本,笔记本,极简,多彩,手帐,备忘录,女生,心情,便签本,时光,青柠,手账,mori,锤子便签,pendo,青橙,小日常,吾记,bear,熊掌记,有道云,印象笔记,素记,帐本,熊密,小记,写情书,喵记,时间胶囊,情绪,猫咪,零点,素签,晨间日志,日历,每日程"/>
+    <meta name="Resource-type" content="Document"/>
+    
+    <!-- Open Graph data -->        
+    <meta property="og:site_name" content="卡片日记 - 在你的卡片中写下每一天"/>
+    <meta property="og:title" content="卡片日记 - 在你的卡片中写下每一天" />
+    <meta property="og:description" content="卡片日记为你提供了一个写下思考，感受，发现，探索，记忆和美梦的完美栖息地。我们生活在一个信息过载的时代，太多的碎片和噪音让我们很去倾听自己的心声。写下日记的同时，放慢你的脚步，安静的去聆听内心的呼唤。"/>
+    <meta property="og:image" content="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/og_img.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.carddiaryapp.com/cn/help" />
+
+    <!-- Twitter -->    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="卡片日记 - 在你的卡片中写下每一天">
+    <meta name="twitter:description" content="卡片日记为你提供了一个写下思考，感受，发现，探索，记忆和美梦的完美栖息地。我们生活在一个信息过载的时代，太多的碎片和噪音让我们很去倾听自己的心声。写下日记的同时，放慢你的脚步，安静的去聆听内心的呼唤。">
+    <meta name="twitter:url" content="https://carddiary.me/cn/help">
+    <meta name="twitter:image" content="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/og_img.png">
+
+    <meta name="google-site-verification" content="aEuVsUFm21dc1iL-pty2fXhRADUENpuQPXI8Kda_M20" />
+
+
     <link rel="shortcut icon" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 " type="image/x-icon" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/favicon.ico">
     <link rel="icon" sizes="32x32" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-32.png">
@@ -31,62 +61,6 @@
 
     <script>
 
-        /*
-        !!!!!!!!!ATTENTION!!!!!!!!
-        This code overide some MKDocs js search functions because those functions are not meant to work
-        with chinese script at the moment.
-        If, at some point, MKDocs will comes with support for zh-hans, remove this and the "load search data" code portions.
-        */
-        var search_data = [];
-
-        function doSearch () {
-
-            var query = document.getElementById('mkdocs-search-query').value;
-                query = query.toLowerCase();
-            var results = [];
-
-            for ( i=0; i<search_data.docs.length; i++) {
-
-                var doc = search_data.docs[i];
-
-                if ( doc.title.toLowerCase().indexOf(query) != -1 || doc.text.toLowerCase().indexOf(query) != -1 ) {
-
-                    results.push(doc);
-                }
-            }
-
-            displayResults(results);
-        }
-
-        function displayResults (results) {
-
-            var search_results = document.getElementById("mkdocs-search-results");
-
-            while (search_results.firstChild) {
-
-                search_results.removeChild(search_results.firstChild);
-            }
-
-            if (results.length > 0){
-
-                for (var i=0; i < results.length; i++) {
-
-                    var result = results[i];
-
-                    var summ = result.text.length > 200 ? result.text.substring(0, 200) : result.text;
-
-                    var html = formatResult(result.location, result.title, summ);
-                    search_results.insertAdjacentHTML('beforeend', html);
-                }
-
-            } else {
-
-                search_results.insertAdjacentHTML('beforeend', "<p>未找到结果</p>");
-            }
-        }
-
-        // ---
-
         $(document).ready(function () {
 
             var $inputElement = $("#mkdocs-search-query");
@@ -103,25 +77,7 @@
                 });
             };
 
-            // load search data
-
-            var oReq = new XMLHttpRequest();
-            oReq.addEventListener("load", function() {
-
-                search_data  = JSON.parse(this.responseText);
-
-            });
-
-            var index_path = 'https://carddiary.me/cn/help/search/search_index.json';
-            if( 'function' === typeof importScripts ){
-              index_path = 'search_index.json';
-            }
-            oReq.open("GET", index_path);
-            oReq.send();
-
-            // --
-
-            // overwrite /mkdocs/js/search.js
+            // from /mkdocs/js/search.js
             var getSearchTerm = function () {
                 var sPageURL = window.location.search.substring(1);
                 var sURLVariables = sPageURL.split('&');
@@ -345,7 +301,11 @@
         <script>
             var base_url = ".";
         </script>
-        <script src="./search/main.js" defer></script>
+        <script src="search/main.js" defer></script>
+  
 
+    <div class="get-help-container">
+        <img src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/yuan_wechat.png" class="contact-us-icon" alt="微信: fuyuan-abc" style="width: 150px;">
+    </div>
 </body>
 </html>
