@@ -86,7 +86,7 @@ if (!window.Worker) {
     });
 } else {
     // Wrap search in a web worker
-    var searchWorker = new Worker(base_url + "/search/worker.js");
+    var searchWorker = new Worker("./search/worker.js");
     searchWorker.postMessage({init: true});
     searchWorker.onmessage = onWorkerMessage;
 }
