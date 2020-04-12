@@ -75,7 +75,7 @@ function onWorkerMessage (e) {
 if (!window.Worker) {
     console.log('Web Worker API not supported');
     // load index in main thread
-    $.getScript(base_url + "/search/worker.js").done(function () {
+    $.getScript("./search/worker.js").done(function () {
         console.log('Loaded worker');
         init();
         window.postMessage = function (msg) {
