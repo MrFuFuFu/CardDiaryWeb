@@ -29,10 +29,63 @@
     <link rel="stylesheet" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/screen.css">
     <script src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/jquery-3.5.0.slim.min.js"/>
 
-  
-   -->
-
     <script>
+
+        /*
+        !!!!!!!!!ATTENTION!!!!!!!!
+        This code overide some MKDocs js search functions because those functions are not meant to work
+        with chinese script at the moment.
+        If, at some point, MKDocs will comes with support for zh-hans, remove this and the "load search data" code portions.
+        */
+        var search_data = [];
+
+        function doSearch () {
+
+            var query = document.getElementById('mkdocs-search-query').value;
+                query = query.toLowerCase();
+            var results = [];
+
+            for ( i=0; i<search_data.docs.length; i++) {
+
+                var doc = search_data.docs[i];
+
+                if ( doc.title.toLowerCase().indexOf(query) != -1 || doc.text.toLowerCase().indexOf(query) != -1 ) {
+
+                    results.push(doc);
+                }
+            }
+
+            displayResults(results);
+        }
+
+        function displayResults (results) {
+
+            var search_results = document.getElementById("mkdocs-search-results");
+
+            while (search_results.firstChild) {
+
+                search_results.removeChild(search_results.firstChild);
+            }
+
+            if (results.length > 0){
+
+                for (var i=0; i < results.length; i++) {
+
+                    var result = results[i];
+
+                    var summ = result.text.length > 200 ? result.text.substring(0, 200) : result.text;
+
+                    var html = formatResult(result.location, result.title, summ);
+                    search_results.insertAdjacentHTML('beforeend', html);
+                }
+
+            } else {
+
+                search_results.insertAdjacentHTML('beforeend', "<p>未找到结果</p>");
+            }
+        }
+
+        // ---
 
         $(document).ready(function () {
 
@@ -50,7 +103,25 @@
                 });
             };
 
-            // from /mkdocs/js/search.js
+            // load search data
+
+            var oReq = new XMLHttpRequest();
+            oReq.addEventListener("load", function() {
+
+                search_data  = JSON.parse(this.responseText);
+
+            });
+
+            var index_path = 'https://carddiary.me/cn/help/search/search_index.json';
+            if( 'function' === typeof importScripts ){
+              index_path = 'search_index.json';
+            }
+            oReq.open("GET", index_path);
+            oReq.send();
+
+            // --
+
+            // overwrite /mkdocs/js/search.js
             var getSearchTerm = function () {
                 var sPageURL = window.location.search.substring(1);
                 var sURLVariables = sPageURL.split('&');
