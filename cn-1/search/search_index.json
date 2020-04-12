@@ -1,0 +1,451 @@
+{
+    "config": {
+        "lang": [
+            "en"
+        ],
+        "prebuild_index": false,
+        "separator": "[\\s\\-]+"
+    },
+    "docs": [
+        {
+            "location": "",
+            "text": "",
+            "title": "Home"
+        },
+        {
+            "location": "subs/general/Add photos or video and title content/",
+            "text": "如何添加照片或者视频，日记标题和内容 你可以在卡片日记中添加多种媒体文件，例如：照片、视频，让你的日记更加丰富直观，有纪念意义。 添加照片和视频 点击编辑页面上方的 + 号添加照片或视频 点击 - 号删除当前照片或视频 点击右边的层叠按钮对照片进行排序和裁剪 标题和内容 你还可以根据自己的需要选择是否添加日记标题，并且方便的输入日记内容。 点击编辑页面的 Title 按钮，添加标题 点击编辑页面的空白处输入日记内容",
+            "title": "如何添加照片或者视频，日记标题和内容"
+        },
+        {
+            "location": "subs/general/Add photos or video and title content/#_1",
+            "text": "你可以在卡片日记中添加多种媒体文件，例如：照片、视频，让你的日记更加丰富直观，有纪念意义。",
+            "title": "如何添加照片或者视频，日记标题和内容"
+        },
+        {
+            "location": "subs/general/Add photos or video and title content/#_2",
+            "text": "点击编辑页面上方的 + 号添加照片或视频 点击 - 号删除当前照片或视频 点击右边的层叠按钮对照片进行排序和裁剪",
+            "title": "添加照片和视频"
+        },
+        {
+            "location": "subs/general/Add photos or video and title content/#_3",
+            "text": "你还可以根据自己的需要选择是否添加日记标题，并且方便的输入日记内容。 点击编辑页面的 Title 按钮，添加标题 点击编辑页面的空白处输入日记内容",
+            "title": "标题和内容"
+        },
+        {
+            "location": "subs/general/Add weather and mood/",
+            "text": "如何设置天气、心情? 你可以在卡片日记中选择天气和心情。 ​打开日记编辑页面 点击​标题下方的笑脸，太阳标志 选择相应的天气和你的心情 返回键或者下拉返回到日记编辑页面",
+            "title": "如何设置天气、心情?"
+        },
+        {
+            "location": "subs/general/Add weather and mood/#_1",
+            "text": "你可以在卡片日记中选择天气和心情。 ​打开日记编辑页面 点击​标题下方的笑脸，太阳标志 选择相应的天气和你的心情 返回键或者下拉返回到日记编辑页面",
+            "title": "如何设置天气、心情?"
+        },
+        {
+            "location": "subs/general/Change text style/",
+            "text": "修改字体样式 卡片日记提供了丰富的文本编辑器，你可以： 自定义文本颜色 字体加粗 字体倾斜 添加下划线 添加删除线 文本居左居右居中 添加分割线 ​只需在键盘上方的编辑工具栏轻松选择即可",
+            "title": "修改字体样式"
+        },
+        {
+            "location": "subs/general/Change text style/#_1",
+            "text": "卡片日记提供了丰富的文本编辑器，你可以： 自定义文本颜色 字体加粗 字体倾斜 添加下划线 添加删除线 文本居左居右居中 添加分割线 ​只需在键盘上方的编辑工具栏轻松选择即可",
+            "title": "修改字体样式"
+        },
+        {
+            "location": "subs/general/Check current month's diaries/",
+            "text": "如何查看当月的日记？ 点击主界面月份卡片进查看该月份的日记列表 点击 日历 翻转月份卡片，再选择相应日期的日记",
+            "title": "如何查看当月的日记？"
+        },
+        {
+            "location": "subs/general/Check current month's diaries/#_1",
+            "text": "点击主界面月份卡片进查看该月份的日记列表 点击 日历 翻转月份卡片，再选择相应日期的日记",
+            "title": "如何查看当月的日记？"
+        },
+        {
+            "location": "subs/general/Create a diary/",
+            "text": "如何创建一篇日记？ 点击主界面底栏中间位置的 加号➕ ​点击月份卡片下方的 日历 按钮，选中日期创建日记 ​左右滑动选择不同的月份 ​点击月份卡片上方显示的年份 2020 ，上下滑动选择年份",
+            "title": "如何创建一篇日记？"
+        },
+        {
+            "location": "subs/general/Create a diary/#_1",
+            "text": "点击主界面底栏中间位置的 加号➕ ​点击月份卡片下方的 日历 按钮，选中日期创建日记 ​左右滑动选择不同的月份 ​点击月份卡片上方显示的年份 2020 ，上下滑动选择年份",
+            "title": "如何创建一篇日记？"
+        },
+        {
+            "location": "subs/general/Create month card's background/",
+            "text": "如何设定月份卡片的背景 你可以在卡片日记中自定义月份背景。既可以选择卡片日记提供的20种配色，也可以从相册中选择照片作为背景。 点击月份卡片右下角的三个点 ··· ，在弹出的界面选择颜色或者相册照片。 你可以： * 选择喜欢的颜色作为封面 * 选择​喜欢的照片作为封面 * 更改选择的照片和颜色​",
+            "title": "如何设定月份卡片的背景"
+        },
+        {
+            "location": "subs/general/Create month card's background/#_1",
+            "text": "你可以在卡片日记中自定义月份背景。既可以选择卡片日记提供的20种配色，也可以从相册中选择照片作为背景。 点击月份卡片右下角的三个点 ··· ，在弹出的界面选择颜色或者相册照片。 你可以： * 选择喜欢的颜色作为封面 * 选择​喜欢的照片作为封面 * 更改选择的照片和颜色​",
+            "title": "如何设定月份卡片的背景"
+        },
+        {
+            "location": "subs/general/Location feature/",
+            "text": "位置功能 如何给日记添加位置？ 在编辑视图中，点击 Title 栏下方的位置标志。 在弹出的心情，天气，标签，地点页面中选择 位置 点击标签页面右上角的 + 进入位置选择页面。 点击​位置选择页面右下角​搜索🔍按钮搜索指定位置。 在位置选择页面​的 输入位置名称 处输入位置名称 点击新创建的位置，选择编辑位置或者删除位置。​ 位置有什么作用？ 在 我的 页面中，你可以根据标签查看日记。 你可以根据标签统计不同类型日记的数量。 可以统计日记中不同位置的数量。​",
+            "title": "位置功能"
+        },
+        {
+            "location": "subs/general/Location feature/#_1",
+            "text": "",
+            "title": "位置功能"
+        },
+        {
+            "location": "subs/general/Location feature/#_2",
+            "text": "在编辑视图中，点击 Title 栏下方的位置标志。 在弹出的心情，天气，标签，地点页面中选择 位置 点击标签页面右上角的 + 进入位置选择页面。 点击​位置选择页面右下角​搜索🔍按钮搜索指定位置。 在位置选择页面​的 输入位置名称 处输入位置名称 点击新创建的位置，选择编辑位置或者删除位置。​",
+            "title": "如何给日记添加位置？"
+        },
+        {
+            "location": "subs/general/Location feature/#_3",
+            "text": "在 我的 页面中，你可以根据标签查看日记。 你可以根据标签统计不同类型日记的数量。 可以统计日记中不同位置的数量。​",
+            "title": "位置有什么作用？"
+        },
+        {
+            "location": "subs/general/Share your diary/",
+            "text": "如何分享你的日记？ 想要分享您的日记？很简单： 进入需要分享的日记 点击​日记页面左下角的 … ​选择 保存日记（图片) 进去预览页面 ​点击预览页面右下角 × 退出分享， ↑ 分享到应用， ↓ 保存到图库",
+            "title": "如何分享你的日记？"
+        },
+        {
+            "location": "subs/general/Share your diary/#_1",
+            "text": "想要分享您的日记？很简单： 进入需要分享的日记 点击​日记页面左下角的 … ​选择 保存日记（图片) 进去预览页面 ​点击预览页面右下角 × 退出分享， ↑ 分享到应用， ↓ 保存到图库",
+            "title": "如何分享你的日记？"
+        },
+        {
+            "location": "subs/general/Tag feature/",
+            "text": "标签功能 添加或编辑标签 在编辑视图中，点击 Title 栏下方的标签标志。 在弹出的心情，天气，标签，地点页面中选择标签 点击标签页面右上角的 + 新建标签。 点击建好的标签，选择编辑标签或者删除标签。​ 标签有什么用处？ 在 我的 页面中，你可以根据标签查看日记。 你可以根据标签统计不同类型日记的数量。",
+            "title": "标签功能"
+        },
+        {
+            "location": "subs/general/Tag feature/#_1",
+            "text": "",
+            "title": "标签功能"
+        },
+        {
+            "location": "subs/general/Tag feature/#_2",
+            "text": "在编辑视图中，点击 Title 栏下方的标签标志。 在弹出的心情，天气，标签，地点页面中选择标签 点击标签页面右上角的 + 新建标签。 点击建好的标签，选择编辑标签或者删除标签。​",
+            "title": "添加或编辑标签"
+        },
+        {
+            "location": "subs/general/Tag feature/#_3",
+            "text": "在 我的 页面中，你可以根据标签查看日记。 你可以根据标签统计不同类型日记的数量。",
+            "title": "标签有什么用处？"
+        },
+        {
+            "location": "subs/mine/Change Mine Page/",
+            "text": "修改 我的 页面名称和图片 想要建立一个与众不同的日记本吗？ 你可以通过修改“我的”页面日记名称和封面轻松实现。 点击 我的 页面 点击​ 日记名称 右上角的 铅笔✏️ 符号 ​自定义日记本名称，图片和今日感想 修改 我的 页面的排列顺序",
+            "title": "修改 `我的` 页面名称和图片"
+        },
+        {
+            "location": "subs/mine/Change Mine Page/#_1",
+            "text": "想要建立一个与众不同的日记本吗？ 你可以通过修改“我的”页面日记名称和封面轻松实现。 点击 我的 页面 点击​ 日记名称 右上角的 铅笔✏️ 符号 ​自定义日记本名称，图片和今日感想 修改 我的 页面的排列顺序",
+            "title": "修改 我的 页面名称和图片"
+        },
+        {
+            "location": "subs/mine/Mine Page/",
+            "text": "我的页面 想打开日记统计和分类的百宝箱吗？ ——你可以在 我的 页面中看到你想要的内容。 在这里，你可以： 自定义日记本名称、说明和封面 查看日记统计数据 查看所有照片，视频 根据日记的地点，心情，天气，标签和年份查看日记",
+            "title": "我的页面"
+        },
+        {
+            "location": "subs/mine/Mine Page/#_1",
+            "text": "想打开日记统计和分类的百宝箱吗？ ——你可以在 我的 页面中看到你想要的内容。 在这里，你可以： 自定义日记本名称、说明和封面 查看日记统计数据 查看所有照片，视频 根据日记的地点，心情，天气，标签和年份查看日记",
+            "title": "我的页面"
+        },
+        {
+            "location": "subs/mine/Photo Gallery Page/",
+            "text": "查看你的照片和视频库 你可以在卡片日记中非常方便的查看所有日记的照片和视频。你也可以通过这些照片和视频找到对应的日记 在 我的 页面点击 照片和视频 浏览你的照片和视频 点击右上角的箭头，选择 打开日记 或者 保存图片",
+            "title": "查看你的照片和视频库"
+        },
+        {
+            "location": "subs/mine/Photo Gallery Page/#_1",
+            "text": "你可以在卡片日记中非常方便的查看所有日记的照片和视频。你也可以通过这些照片和视频找到对应的日记 在 我的 页面点击 照片和视频 浏览你的照片和视频 点击右上角的箭头，选择 打开日记 或者 保存图片",
+            "title": "查看你的照片和视频库"
+        },
+        {
+            "location": "subs/pro/Pro Page/",
+            "text": "高级版 你可以在设置页面的 PRO FEATURES 处购买高级版。 高级版功能 同步（选择不同的同步方式） 更多的照片和视频（最多15张） 夜间模式（保护眼睛，节省电量） 富文本模式（文本颜色，粗体，下划线等） 心情与天气（提供多个心情与天气图标） 导出PDF (精美排版的PDF样式) 地点（写日记的地点统计) 标签​（统计收纳不同的类型的日记) 如何购买高级版 请在高级版页面直接点击购买，购买流程非常简单。 如果你在支付过程中遇到问题，请尝试重启手机或者联系我们。 选择订阅还是 永久 版 订阅和买断享受完全相同的高级版功能。 卡片日记的订阅方式支持按月和按年的订阅方式； 卡片日记也支持一次性买断的方式永久买断高级版的功能。 如果你想尝试使用卡片日记的高级版，但又不想立即支付 永久 的费用，你可以选择 每月 订阅的方式，同时还享受三天的免费试用，如果在试用期内取消订阅，你并不会被扣除任何费用。 查看或取消订阅 iPhone 和 iPad 用户：请查看 Apple 的官方支持： 查看或取消订阅 - Apple 支持 从 Google Play 下载的 Android 用户： 取消、暂停或更改在 Google Play 上的订阅内容 - Android 设备 - Google Play帮助 从其他应用市场下载的安卓用户：卡片日记的订阅是按月或按年预先充值的。购买一个月会自动增加一个月的高级版期限，购买一年会自动增加一年的高级版期限，到期再进行手动购买充值。",
+            "title": "高级版"
+        },
+        {
+            "location": "subs/pro/Pro Page/#_1",
+            "text": "你可以在设置页面的 PRO FEATURES 处购买高级版。",
+            "title": "高级版"
+        },
+        {
+            "location": "subs/pro/Pro Page/#_2",
+            "text": "同步（选择不同的同步方式） 更多的照片和视频（最多15张） 夜间模式（保护眼睛，节省电量） 富文本模式（文本颜色，粗体，下划线等） 心情与天气（提供多个心情与天气图标） 导出PDF (精美排版的PDF样式) 地点（写日记的地点统计) 标签​（统计收纳不同的类型的日记)",
+            "title": "高级版功能"
+        },
+        {
+            "location": "subs/pro/Pro Page/#_3",
+            "text": "请在高级版页面直接点击购买，购买流程非常简单。 如果你在支付过程中遇到问题，请尝试重启手机或者联系我们。",
+            "title": "如何购买高级版"
+        },
+        {
+            "location": "subs/pro/Pro Page/#_4",
+            "text": "订阅和买断享受完全相同的高级版功能。 卡片日记的订阅方式支持按月和按年的订阅方式； 卡片日记也支持一次性买断的方式永久买断高级版的功能。 如果你想尝试使用卡片日记的高级版，但又不想立即支付 永久 的费用，你可以选择 每月 订阅的方式，同时还享受三天的免费试用，如果在试用期内取消订阅，你并不会被扣除任何费用。",
+            "title": "选择订阅还是永久版"
+        },
+        {
+            "location": "subs/pro/Pro Page/#_5",
+            "text": "iPhone 和 iPad 用户：请查看 Apple 的官方支持： 查看或取消订阅 - Apple 支持 从 Google Play 下载的 Android 用户： 取消、暂停或更改在 Google Play 上的订阅内容 - Android 设备 - Google Play帮助 从其他应用市场下载的安卓用户：卡片日记的订阅是按月或按年预先充值的。购买一个月会自动增加一个月的高级版期限，购买一年会自动增加一年的高级版期限，到期再进行手动购买充值。",
+            "title": "查看或取消订阅"
+        },
+        {
+            "location": "subs/settings/Backup and Restore/",
+            "text": "备份和还原 备份/还原 备份 你可以创建卡片日记的备份文件来对卡片日记进行手动备份，创建了备份文件以后请保存卡片日记的备份文件到其他平台（防止卸载卡片日记导致丢失备份文件）。 点击备份的 zip 文件可把文件分享到其他平台（如 iCloud 文件）。 还原 你可以从卡片日记的备份文件中还原你的日记数据。 你也可以把你在 Day One 或者 Journey 写的日记数据恢复到卡片日记中。 从 iCloud Drive，Dropbox 等云端还原 点击 导入 - iCloud, Dropbox 等 选择对应的 ZIP 文件 从 iTunes 还原 要从 iTunes （macOS 系统现已集成到 Finder 中）还原，请连接你的手机到装有 iTunes 或者（macOS 系统）的电脑 1. 点击你的设备 2. 选择 文件 3. 展开 卡片日记 4. 把要还原的 ZIP 文件拖入到卡片日记的根目录下（请不要移动其他任何文件） 5. 打开卡片日记 App - 设置 - 备份 / 还原 - 导入 - iTunes - 导入",
+            "title": "备份和还原"
+        },
+        {
+            "location": "subs/settings/Backup and Restore/#_1",
+            "text": "",
+            "title": "备份和还原"
+        },
+        {
+            "location": "subs/settings/Backup and Restore/#_2",
+            "text": "",
+            "title": "备份/还原"
+        },
+        {
+            "location": "subs/settings/Backup and Restore/#_3",
+            "text": "你可以创建卡片日记的备份文件来对卡片日记进行手动备份，创建了备份文件以后请保存卡片日记的备份文件到其他平台（防止卸载卡片日记导致丢失备份文件）。 点击备份的 zip 文件可把文件分享到其他平台（如 iCloud 文件）。",
+            "title": "备份"
+        },
+        {
+            "location": "subs/settings/Backup and Restore/#_4",
+            "text": "你可以从卡片日记的备份文件中还原你的日记数据。 你也可以把你在 Day One 或者 Journey 写的日记数据恢复到卡片日记中。",
+            "title": "还原"
+        },
+        {
+            "location": "subs/settings/Backup and Restore/#icloud-drivedropbox",
+            "text": "点击 导入 - iCloud, Dropbox 等 选择对应的 ZIP 文件",
+            "title": "从 iCloud Drive，Dropbox 等云端还原"
+        },
+        {
+            "location": "subs/settings/Backup and Restore/#itunes",
+            "text": "要从 iTunes （macOS 系统现已集成到 Finder 中）还原，请连接你的手机到装有 iTunes 或者（macOS 系统）的电脑 1. 点击你的设备 2. 选择 文件 3. 展开 卡片日记 4. 把要还原的 ZIP 文件拖入到卡片日记的根目录下（请不要移动其他任何文件） 5. 打开卡片日记 App - 设置 - 备份 / 还原 - 导入 - iTunes - 导入",
+            "title": "从 iTunes 还原"
+        },
+        {
+            "location": "subs/settings/Dark Mode Page/",
+            "text": "夜间模式 卡片日记支持非常美观的夜间模式。夜间模式下，所有的页面都 点击开关打开夜间模式 添加时间段，自动开启夜间模式",
+            "title": "夜间模式"
+        },
+        {
+            "location": "subs/settings/Dark Mode Page/#_1",
+            "text": "卡片日记支持非常美观的夜间模式。夜间模式下，所有的页面都 点击开关打开夜间模式 添加时间段，自动开启夜间模式",
+            "title": "夜间模式"
+        },
+        {
+            "location": "subs/settings/Display Page/",
+            "text": "显示 在这里你可以设定， 设置字体样式 选择照⽚/视频质量 选择是否显示 ⽇记时间 选择是否在列表页显示 ⽇记标题 选择是否编辑⽇记时显示较⼩的照⽚区域（方便文本书写）",
+            "title": "显示"
+        },
+        {
+            "location": "subs/settings/Display Page/#_1",
+            "text": "在这里你可以设定， 设置字体样式 选择照⽚/视频质量 选择是否显示 ⽇记时间 选择是否在列表页显示 ⽇记标题 选择是否编辑⽇记时显示较⼩的照⽚区域（方便文本书写）",
+            "title": "显示"
+        },
+        {
+            "location": "subs/settings/Export TXT and PDF/",
+            "text": "导出（文本，PDF） 你可以导出卡片日记的日记数据为文本文件或者 PDF 文件，你也可以选择指定日期范围导出。 点击导出的文件可把文件分享到其他平台（如 iCloud 文件等）",
+            "title": "导出（文本，PDF）"
+        },
+        {
+            "location": "subs/settings/Export TXT and PDF/#pdf",
+            "text": "你可以导出卡片日记的日记数据为文本文件或者 PDF 文件，你也可以选择指定日期范围导出。 点击导出的文件可把文件分享到其他平台（如 iCloud 文件等）",
+            "title": "导出（文本，PDF）"
+        },
+        {
+            "location": "subs/settings/Language Page/",
+            "text": "语言 卡片日记支持超过25种语言，如果你是外语爱好者，我们非常欢迎你能够协助我们翻译，你可以在这里与我们协作: https://crowdin.com/project/card-diary",
+            "title": "语言"
+        },
+        {
+            "location": "subs/settings/Language Page/#_1",
+            "text": "卡片日记支持超过25种语言，如果你是外语爱好者，我们非常欢迎你能够协助我们翻译，你可以在这里与我们协作: https://crowdin.com/project/card-diary",
+            "title": "语言"
+        },
+        {
+            "location": "subs/settings/Lock Page/",
+            "text": "锁定 点击 密码 设置4位密码锁 点击相应的密码类型输入密码​ 点击开启 Face ID / 指纹锁定 多久以后启用 再次打开卡片日记时，需要多长时间才会重新要求输入密码。 这个设定方便你在写日记的途中切换到其他应用，再切换回卡片日记时，短时间内不需要再输入密码，避免不断输入密码的繁琐。",
+            "title": "锁定"
+        },
+        {
+            "location": "subs/settings/Lock Page/#_1",
+            "text": "点击 密码 设置4位密码锁 点击相应的密码类型输入密码​ 点击开启 Face ID / 指纹锁定",
+            "title": "锁定"
+        },
+        {
+            "location": "subs/settings/Lock Page/#_2",
+            "text": "再次打开卡片日记时，需要多长时间才会重新要求输入密码。 这个设定方便你在写日记的途中切换到其他应用，再切换回卡片日记时，短时间内不需要再输入密码，避免不断输入密码的繁琐。",
+            "title": "多久以后启用"
+        },
+        {
+            "location": "subs/settings/Reminder Page/",
+            "text": "提醒 添加时间以提醒自己写日记",
+            "title": "提醒"
+        },
+        {
+            "location": "subs/settings/Reminder Page/#_1",
+            "text": "添加时间以提醒自己写日记",
+            "title": "提醒"
+        },
+        {
+            "location": "subs/settings/Settings Page/",
+            "text": "设置 点击 我的 页面右上角按钮进入设置，在这里你可以设置同步，备份，高级版，密码锁，提醒，语言，夜间模式等等功能",
+            "title": "设置"
+        },
+        {
+            "location": "subs/settings/Settings Page/#_1",
+            "text": "点击 我的 页面右上角按钮进入设置，在这里你可以设置同步，备份，高级版，密码锁，提醒，语言，夜间模式等等功能",
+            "title": "设置"
+        },
+        {
+            "location": "subs/settings/Trash - iOS/",
+            "text": "废纸篓 - iOS 删除了的日记被放到 废纸篓 中。 选择 全部删除 或者 全部恢复 来操作所有 废纸篓 中的日记 点击右上角 选择 删除或者恢复选中的日记",
+            "title": "废纸篓 - iOS"
+        },
+        {
+            "location": "subs/settings/Trash - iOS/#-ios",
+            "text": "删除了的日记被放到 废纸篓 中。 选择 全部删除 或者 全部恢复 来操作所有 废纸篓 中的日记 点击右上角 选择 删除或者恢复选中的日记",
+            "title": "废纸篓 - iOS"
+        },
+        {
+            "location": "subs/sync/Google Drive Auto Sync/",
+            "text": "Google Drive 自动同步 - 安卓 什么是卡片日记的云端自动同步？ 云端自动同步是卡片日记的同步服务，可以将你的日记通过指定的云端存储同步和备份到你所有的安卓设备上。 你只需花30秒的时间即可设置好 Google Drive 的自动同步。之后，卡片日记会为你完成所有的自动同步工作，你不需要担心任何细节问题。 如何设定 Google Drive 的自动同步 在使用 Google Drive 同步之前，请先确保你的设备已经登录了 Google 账户，并且你的 Google Drive 有足够的容量 打开卡片日记，点击设置里的 云端自动同步 选择 同步到 Google Drive 选择你要进行同步的 Google 账户 如何停止 Google Drive 的自动同步 打开卡片日记，点击设置里的 云端自动同步 点击 停止同步到Google Drive",
+            "title": "Google Drive 自动同步 - 安卓"
+        },
+        {
+            "location": "subs/sync/Google Drive Auto Sync/#google-drive-",
+            "text": "",
+            "title": "Google Drive 自动同步 - 安卓"
+        },
+        {
+            "location": "subs/sync/Google Drive Auto Sync/#_1",
+            "text": "云端自动同步是卡片日记的同步服务，可以将你的日记通过指定的云端存储同步和备份到你所有的安卓设备上。 你只需花30秒的时间即可设置好 Google Drive 的自动同步。之后，卡片日记会为你完成所有的自动同步工作，你不需要担心任何细节问题。",
+            "title": "什么是卡片日记的云端自动同步？"
+        },
+        {
+            "location": "subs/sync/Google Drive Auto Sync/#google-drive",
+            "text": "在使用 Google Drive 同步之前，请先确保你的设备已经登录了 Google 账户，并且你的 Google Drive 有足够的容量 打开卡片日记，点击设置里的 云端自动同步 选择 同步到 Google Drive 选择你要进行同步的 Google 账户",
+            "title": "如何设定 Google Drive 的自动同步"
+        },
+        {
+            "location": "subs/sync/Google Drive Auto Sync/#google-drive_1",
+            "text": "打开卡片日记，点击设置里的 云端自动同步 点击 停止同步到Google Drive",
+            "title": "如何停止 Google Drive 的自动同步"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/",
+            "text": "坚果云(WebDav) 自动同步 - 安卓 什么是卡片日记的云端自动同步？ 云端自动同步是卡片日记的同步服务，可以将你的日记通过指定的云端存储同步和备份到你所有的安卓设备上。 你只需一次性花5分钟时间设置好坚果云的WebDav配置后，卡片日记会为你完成所有的自动同步工作，你不需要担心任何细节问题。 坚果云(WebDav) 是什么？ 坚果云是什么？ 坚果云是一个云存储服务平台，提供安全、稳定、快速的云盘服务，提供跨平台的文件同步、备份、分享服务。 WebDav 是什么？ WebDav 是基于Web的分布式编写和版本控制。简单来说，就是一种数据传输协议。 如何让卡片日记使用坚果云的同步服务？ 如果你还没有坚果云账号，请先先注册坚果云。注册登录完成后，打开坚果云的页面（ 坚果云的App也可以 ） 生成坚果云的 WebDav 账户 点击右上角的 账户信息 点击页面上的 安全选项 点击 第三方应用管理 里的 添加应用 输入应用名称，为方便记忆，你可以写：卡片日记 点击 生成应用 复制生成了的 应用密码 至此，卡片日记专属的 WebDav 账户和密码就已经生成了，请参阅如下图介绍 在卡片日记内登录坚果云的 WebDav 账户 打开卡片日记，点击设置里的 云端自动同步 选择 同步到坚果云 输入坚果云的登录邮箱 输入刚才生成的 应用密码 请注意 应用密码 是前面我们生成的应用密码，并非坚果云账户的登录密码，请看上面👆的截图提示 可以手动同步吗？ 你可以手动强制进行同步，该操作在卡片日记中会执行两个步骤： 把设备上所有日记数据全部发送到你的坚果云存储中 从你的坚果云存储中获取所有的日记数据并保存到本地",
+            "title": "坚果云(WebDav) 自动同步 - 安卓"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/#webdav-",
+            "text": "",
+            "title": "坚果云(WebDav) 自动同步 - 安卓"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/#_1",
+            "text": "云端自动同步是卡片日记的同步服务，可以将你的日记通过指定的云端存储同步和备份到你所有的安卓设备上。 你只需一次性花5分钟时间设置好坚果云的WebDav配置后，卡片日记会为你完成所有的自动同步工作，你不需要担心任何细节问题。",
+            "title": "什么是卡片日记的云端自动同步？"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/#webdav",
+            "text": "",
+            "title": "坚果云(WebDav) 是什么？"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/#_2",
+            "text": "坚果云是一个云存储服务平台，提供安全、稳定、快速的云盘服务，提供跨平台的文件同步、备份、分享服务。",
+            "title": "坚果云是什么？"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/#webdav_1",
+            "text": "WebDav 是基于Web的分布式编写和版本控制。简单来说，就是一种数据传输协议。",
+            "title": "WebDav 是什么？"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/#_3",
+            "text": "如果你还没有坚果云账号，请先先注册坚果云。注册登录完成后，打开坚果云的页面（ 坚果云的App也可以 ）",
+            "title": "如何让卡片日记使用坚果云的同步服务？"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/#webdav_2",
+            "text": "点击右上角的 账户信息 点击页面上的 安全选项 点击 第三方应用管理 里的 添加应用 输入应用名称，为方便记忆，你可以写：卡片日记 点击 生成应用 复制生成了的 应用密码 至此，卡片日记专属的 WebDav 账户和密码就已经生成了，请参阅如下图介绍",
+            "title": "生成坚果云的 WebDav 账户"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/#webdav_3",
+            "text": "打开卡片日记，点击设置里的 云端自动同步 选择 同步到坚果云 输入坚果云的登录邮箱 输入刚才生成的 应用密码 请注意 应用密码 是前面我们生成的应用密码，并非坚果云账户的登录密码，请看上面👆的截图提示",
+            "title": "在卡片日记内登录坚果云的 WebDav 账户"
+        },
+        {
+            "location": "subs/sync/WebDav Auto Sync - Android/#_4",
+            "text": "你可以手动强制进行同步，该操作在卡片日记中会执行两个步骤： 把设备上所有日记数据全部发送到你的坚果云存储中 从你的坚果云存储中获取所有的日记数据并保存到本地",
+            "title": "可以手动同步吗？"
+        },
+        {
+            "location": "subs/sync/What's Card Diary Cloud Auto Sync/",
+            "text": "什么是卡片日记的 云端自动同步 同步 1. iOS 设备 在 iOS 设备上 iCloud 自动同步时完全免费和自动开启的，所有的数据均会自动同步到你私有的 iCloud 存储上 Android 设备 你可以选择 坚果云的 WebDav 同步 或者 Google Drive 自动同步",
+            "title": "什么是卡片日记的 `云端自动同步`"
+        },
+        {
+            "location": "subs/sync/What's Card Diary Cloud Auto Sync/#_1",
+            "text": "同步 1. iOS 设备 在 iOS 设备上 iCloud 自动同步时完全免费和自动开启的，所有的数据均会自动同步到你私有的 iCloud 存储上 Android 设备 你可以选择 坚果云的 WebDav 同步 或者 Google Drive 自动同步",
+            "title": "什么是卡片日记的 云端自动同步"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/",
+            "text": "iCloud 自动同步 (iPhone/iPad) 什么是卡片日记的 iCloud 自动同步？ iCloud 自动同步是卡片日记的同步服务，可以将你的日记通过你私有的 iCloud 存储同步和备份到你所有的 iOS 设备上。 iCloud 自动同步如何工作？ 卡片日记会为你完成所有的自动同步工作，你不需要担心任何细节问题。 /请确保你在手机的 设置 应用里登录了 iCloud 账户，并有足够的 iCloud 存储/ 可以手动同步吗？ 你可以手动强制进行 iCloud 同步，该操作在卡片日记中会执行两个步骤： 把设备上所有日记数据全部发送到你的私有 iCloud 存储中 再从你的私有 iCloud 存储中获取所有的日记数据并保存到本地 同步过程中，日记数据有冲突怎么办？ 在上述步骤二中，我们会根据日记的最后编辑时间来决定保留哪篇日记。 即： 1. 如果本地的某篇日记和 iCloud 中的最后编辑日期相比较旧，则本地的这篇日记会被覆盖 2. 反之，如果本地的日记最后编辑日期较新，则该篇日记不会被覆盖 日记同步备份数据是否安全和隐私？ 是的！你所有的日记数据都保存在你的设备和你的私有 iCloud 存储中。在任何情况下，任何人（包括卡片日记工作人员）都无法访问你的云端数据。 iCloud 自动同步需要付费吗？ 卡片日记的 iCloud 自动同步功能时完全免费的，即使你没有购买高级版依然可以使用。 （如果你的 iCloud 存储容量不够了，你可能需要为 iCloud 存储付费。具体请参阅 购买更多 iCloud 储存空间 - Apple 支持 ） 如何关闭 iCloud 自动同步？ 如果你不想使用 iCloud 自动同步功能，你可以通过如下方式关闭卡片日记的 iCloud 自动同步功能， 打开手机的 设置 应用 - 点击 你的名字 - iCloud - 滑动 页面找到 卡片日记 - 点击 关闭 如何删除卡片日记在 iCloud 上的数据 如果你不想卡片日记的任何数据都保留在 iCloud 上，你可以通过如下方式删除卡片日记在 iCloud 上的存储数据。 请注意，该操作无法恢复 打开手机的 设置 应用 - 点击 你的名字 - iCloud - iCloud 存储空间 - 卡片日记 - 删除数据",
+            "title": "iCloud 自动同步 (iPhone/iPad)"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/#icloud-iphoneipad",
+            "text": "",
+            "title": "iCloud 自动同步 (iPhone/iPad)"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/#icloud",
+            "text": "iCloud 自动同步是卡片日记的同步服务，可以将你的日记通过你私有的 iCloud 存储同步和备份到你所有的 iOS 设备上。",
+            "title": "什么是卡片日记的 iCloud 自动同步？"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/#icloud_1",
+            "text": "卡片日记会为你完成所有的自动同步工作，你不需要担心任何细节问题。 /请确保你在手机的 设置 应用里登录了 iCloud 账户，并有足够的 iCloud 存储/",
+            "title": "iCloud 自动同步如何工作？"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/#_1",
+            "text": "你可以手动强制进行 iCloud 同步，该操作在卡片日记中会执行两个步骤： 把设备上所有日记数据全部发送到你的私有 iCloud 存储中 再从你的私有 iCloud 存储中获取所有的日记数据并保存到本地",
+            "title": "可以手动同步吗？"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/#_2",
+            "text": "在上述步骤二中，我们会根据日记的最后编辑时间来决定保留哪篇日记。 即： 1. 如果本地的某篇日记和 iCloud 中的最后编辑日期相比较旧，则本地的这篇日记会被覆盖 2. 反之，如果本地的日记最后编辑日期较新，则该篇日记不会被覆盖",
+            "title": "同步过程中，日记数据有冲突怎么办？"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/#_3",
+            "text": "是的！你所有的日记数据都保存在你的设备和你的私有 iCloud 存储中。在任何情况下，任何人（包括卡片日记工作人员）都无法访问你的云端数据。",
+            "title": "日记同步备份数据是否安全和隐私？"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/#icloud_2",
+            "text": "卡片日记的 iCloud 自动同步功能时完全免费的，即使你没有购买高级版依然可以使用。 （如果你的 iCloud 存储容量不够了，你可能需要为 iCloud 存储付费。具体请参阅 购买更多 iCloud 储存空间 - Apple 支持 ）",
+            "title": "iCloud 自动同步需要付费吗？"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/#icloud_3",
+            "text": "如果你不想使用 iCloud 自动同步功能，你可以通过如下方式关闭卡片日记的 iCloud 自动同步功能， 打开手机的 设置 应用 - 点击 你的名字 - iCloud - 滑动 页面找到 卡片日记 - 点击 关闭",
+            "title": "如何关闭 iCloud 自动同步？"
+        },
+        {
+            "location": "subs/sync/iCloud Auto Sync - iOS/#icloud_4",
+            "text": "如果你不想卡片日记的任何数据都保留在 iCloud 上，你可以通过如下方式删除卡片日记在 iCloud 上的存储数据。 请注意，该操作无法恢复 打开手机的 设置 应用 - 点击 你的名字 - iCloud - iCloud 存储空间 - 卡片日记 - 删除数据",
+            "title": "如何删除卡片日记在 iCloud 上的数据"
+        }
+    ]
+}
