@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+      <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KR24RFL');</script>
+    <!-- End Google Tag Manager -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 " type="image/x-icon" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/favicon.ico">
+    <link rel="icon" sizes="32x32" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-32.png">
+    <link rel="icon" sizes="192x192" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-192.png">
+    <meta name="google-site-verification" content="aEuVsUFm21dc1iL-pty2fXhRADUENpuQPXI8Kda_M20" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-57.png">
+
+
+    <title>坚果云 WebDav 自动同步 - 安卓 - 帮助 - 卡片日记</title>
+
+    <link rel="stylesheet" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/screen.css">
+    <script src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/jquery-3.5.0.slim.min.js"/>
+
+  
+   -->
+
+    <script>
+
+        $(document).ready(function () {
+
+            var $inputElement = $("#mkdocs-search-query");
+            var inputElement = $("#mkdocs-search-query").get(0);
+
+            var handlePlaceholderRemoval = function () {
+                var currentInputPlaceholderText = inputElement.placeholder;
+                if (!currentInputPlaceholderText || currentInputPlaceholderText == "") {
+                    return;
+                }
+                $inputElement.attr("placeholder", "");
+                $inputElement.on("blur", function () {
+                    $inputElement.attr("placeholder", currentInputPlaceholderText);
+                });
+            };
+
+            // from /mkdocs/js/search.js
+            var getSearchTerm = function () {
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+                for (var i = 0; i < sURLVariables.length; i++) {
+                    var sParameterName = sURLVariables[i].split('=');
+                    if (sParameterName[0] == 'q') {
+                        return decodeURIComponent(sParameterName[1].replace(/\+/g, '%20'));
+                    }
+                }
+            };
+
+            // handling the click of the suggestion items
+            $(".search-suggestion").click(function (event) {
+                // no default action
+                event.preventDefault();
+                // we will change the search input with the clicked search term
+                var href = $(this).attr("href");
+                $inputElement.focus();
+                var searchString = href.substring(href.indexOf("?q=") + 3, href.length);
+                searchString = decodeURI(searchString);
+                $inputElement.val(searchString);
+                var keyupEvent = new Event('keyup');
+                inputElement.dispatchEvent(keyupEvent);
+                handlePlaceholderRemoval();
+            });
+
+            // if there is a search term we will remove the placeholder in order to
+            // solve an issue on Safari
+            var searchTerm = getSearchTerm();
+            if (typeof searchTerm !== "undefined" && searchTerm != "") {
+                handlePlaceholderRemoval();
+            }
+
+            // Replace the links for the language selector
+            var current_url = window.location.href;
+            var eng_url = zh_url = "";
+
+            if ( current_url.indexOf("/cn/") != -1 ) {
+
+                zh_url = current_url;
+                eng_url = current_url.replace("/cn/", "/");
+
+            } else {
+
+                eng_url = current_url;
+                zh_url = current_url.replace("carddiary.me/", "carddiary.me/cn/");
+            }
+
+            $('#js-en-lang-selector').attr("href", eng_url);
+            $('#js-zh-lang-selector').attr("href", zh_url);
+        });
+
+    </script>
+</head>
+
+<body  data-gr-c-s-loaded="true">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR24RFL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <div class="header alternate-bg faq-header">
+        <div class="wrapper">
+            <nav class="navigation">
+                <a href="https://carddiary.me?lng=cn">
+                    <img src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/logo.png" width="180px;" class="navigation-logo" alt="卡片日记">
+                </a>
+                <ul class="navigation-elements">
+                    <li class="navigation-item"><a name="卡片日记" href="https://carddiary.me?lng=cn">卡片日记</a></li>
+                    <li class="navigation-item"><a name="功能" href="https://carddiary.me/?lng=cn#features">功能</a></li>
+                    <li class="navigation-item"><a name="定价" href="https://carddiary.me/?lng=cn#pricing">定价</a></li>
+                    <li class="navigation-item-selected"><a name="常见问题" href="https://carddiary.me/cn/help">常见问题</a></li>
+                    <li class="navigation-item navigation-lang"><a name="English" href="https://carddiary.me/help" id="js-en-lang-selector">Eng</a> / <a name="中" href="https://carddiary.me/cn/help" id="js-zh-lang-selector"><strong>中</strong></a></li>
+                </ul>
+            </nav>
+            <h1 class="header-title faq-header-title">您好，有什么需要帮助的吗？</h1>
+
+        <form id="content_search" action="">
+            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+            <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="搜索文档" autocomplete="off">
+        </form>
+
+        <p class="search-suggestions">热门搜索:
+            <a href="https://cardiary.me/cn/help/?q=iCloud" class="search-suggestion" name="iCloud">iCloud</a>,
+            <a href="https://cardiary.me/cn/help/?q=WebDav" class="search-suggestion" name="WebDav">WebDav</a>,
+            <a href="https://cardiary.me/cn/help/?q=Pro" class="search-suggestion" name="Pro">Pro</a>
+        </p>
+        </div>
+    </div>
+  <div class="wrapper">
+        <div id="mkdocs-search-results">
+            <!-- Sorry, page not found. -->
+        </div>
+
+        
+          
+        <div class="article faq-article">
+          <h1 id="webdav-">坚果云(WebDav) 自动同步 - 安卓</h1>
+<h2 id="_1">什么是卡片日记的云端自动同步？</h2>
+<p>云端自动同步是卡片日记的同步服务，可以将你的日记通过指定的云端存储同步和备份到你所有的安卓设备上。</p>
+<p>你只需一次性花5分钟时间设置好坚果云的WebDav配置后，卡片日记会为你完成所有的自动同步工作，你不需要担心任何细节问题。</p>
+<h2 id="webdav">坚果云(WebDav) 是什么？</h2>
+<h3 id="_2">坚果云是什么？</h3>
+<p>坚果云是一个云存储服务平台，提供安全、稳定、快速的云盘服务，提供跨平台的文件同步、备份、分享服务。</p>
+<h3 id="webdav_1">WebDav 是什么？</h3>
+<p>WebDav 是基于Web的分布式编写和版本控制。简单来说，就是一种数据传输协议。</p>
+<h2 id="_3">如何让卡片日记使用坚果云的同步服务？</h2>
+<p>如果你还没有坚果云账号，请先先注册坚果云。注册登录完成后，打开坚果云的页面（<strong>坚果云的App也可以</strong>）</p>
+<h3 id="webdav_2">生成坚果云的 WebDav 账户</h3>
+<ol>
+<li>点击右上角的 <code>账户信息</code></li>
+<li>点击页面上的 <code>安全选项</code></li>
+<li>点击 <code>第三方应用管理</code> 里的 <code>添加应用</code></li>
+<li>输入应用名称，为方便记忆，你可以写：卡片日记</li>
+<li>点击 <code>生成应用</code></li>
+<li>复制生成了的 <code>应用密码</code></li>
+</ol>
+<p>至此，卡片日记专属的 WebDav 账户和密码就已经生成了，请参阅如下图介绍
+<img alt="" src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/webdav_0.png" />
+<img alt="" src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/webdav_1.png" /></p>
+<h3 id="webdav_3">在卡片日记内登录坚果云的 WebDav 账户</h3>
+<ol>
+<li>打开卡片日记，点击设置里的 <code>云端自动同步</code></li>
+<li>选择 <code>同步到坚果云</code></li>
+<li>输入坚果云的登录邮箱</li>
+<li>输入刚才生成的<code>应用密码</code></li>
+</ol>
+<p><strong>请注意 应用密码 是前面我们生成的应用密码，并非坚果云账户的登录密码，请看上面👆的截图提示</strong>
+<img alt="" src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/android_webdav.png" /></p>
+<h2 id="_4">可以手动同步吗？</h2>
+<p>你可以手动强制进行同步，该操作在卡片日记中会执行两个步骤：</p>
+<ol>
+<li>把设备上所有日记数据全部发送到你的坚果云存储中</li>
+<li>从你的坚果云存储中获取所有的日记数据并保存到本地</li>
+</ol>
+        </div>
+          
+  </div>
+        <script>
+            var base_url = "../..";
+        </script>
+        <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

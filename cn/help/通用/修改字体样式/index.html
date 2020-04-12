@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+      <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KR24RFL');</script>
+    <!-- End Google Tag Manager -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 " type="image/x-icon" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/favicon.ico">
+    <link rel="icon" sizes="32x32" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-32.png">
+    <link rel="icon" sizes="192x192" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-192.png">
+    <meta name="google-site-verification" content="aEuVsUFm21dc1iL-pty2fXhRADUENpuQPXI8Kda_M20" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/favicons/favicon-57.png">
+
+
+    <title>修改字体样式 - 帮助 - 卡片日记</title>
+
+    <link rel="stylesheet" href="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/screen.css">
+    <script src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/js/jquery-3.5.0.slim.min.js"/>
+
+  
+   -->
+
+    <script>
+
+        $(document).ready(function () {
+
+            var $inputElement = $("#mkdocs-search-query");
+            var inputElement = $("#mkdocs-search-query").get(0);
+
+            var handlePlaceholderRemoval = function () {
+                var currentInputPlaceholderText = inputElement.placeholder;
+                if (!currentInputPlaceholderText || currentInputPlaceholderText == "") {
+                    return;
+                }
+                $inputElement.attr("placeholder", "");
+                $inputElement.on("blur", function () {
+                    $inputElement.attr("placeholder", currentInputPlaceholderText);
+                });
+            };
+
+            // from /mkdocs/js/search.js
+            var getSearchTerm = function () {
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+                for (var i = 0; i < sURLVariables.length; i++) {
+                    var sParameterName = sURLVariables[i].split('=');
+                    if (sParameterName[0] == 'q') {
+                        return decodeURIComponent(sParameterName[1].replace(/\+/g, '%20'));
+                    }
+                }
+            };
+
+            // handling the click of the suggestion items
+            $(".search-suggestion").click(function (event) {
+                // no default action
+                event.preventDefault();
+                // we will change the search input with the clicked search term
+                var href = $(this).attr("href");
+                $inputElement.focus();
+                var searchString = href.substring(href.indexOf("?q=") + 3, href.length);
+                searchString = decodeURI(searchString);
+                $inputElement.val(searchString);
+                var keyupEvent = new Event('keyup');
+                inputElement.dispatchEvent(keyupEvent);
+                handlePlaceholderRemoval();
+            });
+
+            // if there is a search term we will remove the placeholder in order to
+            // solve an issue on Safari
+            var searchTerm = getSearchTerm();
+            if (typeof searchTerm !== "undefined" && searchTerm != "") {
+                handlePlaceholderRemoval();
+            }
+
+            // Replace the links for the language selector
+            var current_url = window.location.href;
+            var eng_url = zh_url = "";
+
+            if ( current_url.indexOf("/cn/") != -1 ) {
+
+                zh_url = current_url;
+                eng_url = current_url.replace("/cn/", "/");
+
+            } else {
+
+                eng_url = current_url;
+                zh_url = current_url.replace("carddiary.me/", "carddiary.me/cn/");
+            }
+
+            $('#js-en-lang-selector').attr("href", eng_url);
+            $('#js-zh-lang-selector').attr("href", zh_url);
+        });
+
+    </script>
+</head>
+
+<body  data-gr-c-s-loaded="true">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR24RFL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <div class="header alternate-bg faq-header">
+        <div class="wrapper">
+            <nav class="navigation">
+                <a href="https://carddiary.me?lng=cn">
+                    <img src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/carddiary-web/logo.png" width="180px;" class="navigation-logo" alt="卡片日记">
+                </a>
+                <ul class="navigation-elements">
+                    <li class="navigation-item"><a name="卡片日记" href="https://carddiary.me?lng=cn">卡片日记</a></li>
+                    <li class="navigation-item"><a name="功能" href="https://carddiary.me/?lng=cn#features">功能</a></li>
+                    <li class="navigation-item"><a name="定价" href="https://carddiary.me/?lng=cn#pricing">定价</a></li>
+                    <li class="navigation-item-selected"><a name="常见问题" href="https://carddiary.me/cn/help">常见问题</a></li>
+                    <li class="navigation-item navigation-lang"><a name="English" href="https://carddiary.me/help" id="js-en-lang-selector">Eng</a> / <a name="中" href="https://carddiary.me/cn/help" id="js-zh-lang-selector"><strong>中</strong></a></li>
+                </ul>
+            </nav>
+            <h1 class="header-title faq-header-title">您好，有什么需要帮助的吗？</h1>
+
+        <form id="content_search" action="">
+            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+            <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="搜索文档" autocomplete="off">
+        </form>
+
+        <p class="search-suggestions">热门搜索:
+            <a href="https://cardiary.me/cn/help/?q=iCloud" class="search-suggestion" name="iCloud">iCloud</a>,
+            <a href="https://cardiary.me/cn/help/?q=WebDav" class="search-suggestion" name="WebDav">WebDav</a>,
+            <a href="https://cardiary.me/cn/help/?q=Pro" class="search-suggestion" name="Pro">Pro</a>
+        </p>
+        </div>
+    </div>
+  <div class="wrapper">
+        <div id="mkdocs-search-results">
+            <!-- Sorry, page not found. -->
+        </div>
+
+        
+          
+        <div class="article faq-article">
+          <h1 id="_1">修改字体样式</h1>
+<p>卡片日记提供了丰富的文本编辑器，你可以：</p>
+<ul>
+<li>自定义文本颜色</li>
+<li>字体加粗</li>
+<li>字体倾斜</li>
+<li>添加下划线</li>
+<li>添加删除线</li>
+<li>文本居左居右居中</li>
+<li>添加分割线</li>
+</ul>
+<p>​只需在键盘上方的编辑工具栏轻松选择即可</p>
+<p><img alt="" src="https://cache-img.oss-cn-hangzhou.aliyuncs.com/help-center/img/text_tool.png" /></p>
+        </div>
+          
+  </div>
+        <script>
+            var base_url = "../..";
+        </script>
+        <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
