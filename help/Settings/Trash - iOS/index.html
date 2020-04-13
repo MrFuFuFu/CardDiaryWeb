@@ -131,6 +131,19 @@
         });
 
     </script>
+
+    <script>
+        $(function(){
+          // bind change event to select
+          $('#locale-picker').on('change', function () {
+              var url = $(this).val(); // get selected value
+              if (url) { // require a URL
+                  window.location = url; // redirect
+              }
+              return false;
+          });
+        });
+    </script>
 </head>
 
 <body  data-gr-c-s-loaded="true">
@@ -150,6 +163,11 @@
                     <li class="navigation-item"><a name="Pricing" href="https://carddiary.me/#pricing">Pricing</a></li>
                     <li class="navigation-item-selected"><a name="Help" href="https://carddiary.me/help/">Help</a></li>
                     <li class="navigation-item navigation-lang"><a name="English" href="https://carddiary.me/helpTrash - iOS" id="js-en-lang-selector">Eng</a> / <a name="中" href="https://carddiary.me/cn/help" id="js-zh-lang-selector">中</a></li>
+
+                    <select name="locale-picker" id="locale-picker" class="navigation-item navigation-lang" data-locale="en" style="width: 86px;">
+                        <option value="https://carddiary.me/help/"  selected="selected" >English</option>
+                        <option value="https://carddiary.me/help/" >简体中文</option>
+                    </select>
                 </ul>
             </nav>
             <h1 class="header-title faq-header-title">Hey there, how can we help?</h1>
